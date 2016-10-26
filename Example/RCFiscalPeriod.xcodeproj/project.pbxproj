@@ -12,6 +12,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		B413AC651DC0B3F200C0FDB3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = B413AC621DC0B3F200C0FDB3 /* .gitkeep */; };
+		B413AC6B1DC0B43F00C0FDB3 /* NSDate+RCPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = B413AC681DC0B43F00C0FDB3 /* NSDate+RCPeriod.m */; };
+		B413AC6C1DC0B43F00C0FDB3 /* RCFiscal.m in Sources */ = {isa = PBXBuildFile; fileRef = B413AC6A1DC0B43F00C0FDB3 /* RCFiscal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +28,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		C00EBFA6D3A9F54CC97C82CB /* RCFiscalPeriod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = RCFiscalPeriod.podspec; path = ../RCFiscalPeriod.podspec; sourceTree = "<group>"; };
-		F95F012F48E201F0B0AB91F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B413AC621DC0B3F200C0FDB3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B413AC671DC0B43F00C0FDB3 /* NSDate+RCPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RCPeriod.h"; sourceTree = "<group>"; };
+		B413AC681DC0B43F00C0FDB3 /* NSDate+RCPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RCPeriod.m"; sourceTree = "<group>"; };
+		B413AC691DC0B43F00C0FDB3 /* RCFiscal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCFiscal.h; sourceTree = "<group>"; };
+		B413AC6A1DC0B43F00C0FDB3 /* RCFiscal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCFiscal.m; sourceTree = "<group>"; };
+		C00EBFA6D3A9F54CC97C82CB /* RCFiscalPeriod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RCFiscalPeriod.podspec; path = ../RCFiscalPeriod.podspec; sourceTree = "<group>"; };
+		F95F012F48E201F0B0AB91F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				B413AC5E1DC0B3F200C0FDB3 /* RCFiscalPeriod */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -101,6 +110,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B413AC5E1DC0B3F200C0FDB3 /* RCFiscalPeriod */ = {
+			isa = PBXGroup;
+			children = (
+				B413AC611DC0B3F200C0FDB3 /* Classes */,
+			);
+			path = RCFiscalPeriod;
+			sourceTree = "<group>";
+		};
+		B413AC611DC0B3F200C0FDB3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B413AC671DC0B43F00C0FDB3 /* NSDate+RCPeriod.h */,
+				B413AC681DC0B43F00C0FDB3 /* NSDate+RCPeriod.m */,
+				B413AC691DC0B43F00C0FDB3 /* RCFiscal.h */,
+				B413AC6A1DC0B43F00C0FDB3 /* RCFiscal.m */,
+				B413AC621DC0B3F200C0FDB3 /* .gitkeep */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,13 +159,8 @@
 				CLASSPREFIX = KH;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Khemarin;
-				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
-					};
-				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RCFiscalPeriod" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -159,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B413AC651DC0B3F200C0FDB3 /* .gitkeep in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B413AC6C1DC0B43F00C0FDB3 /* RCFiscal.m in Sources */,
+				B413AC6B1DC0B43F00C0FDB3 /* NSDate+RCPeriod.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +305,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCFiscalPeriod_Example.app/RCFiscalPeriod_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -296,7 +322,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCFiscalPeriod_Example.app/RCFiscalPeriod_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -304,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "RCFiscalPeriod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

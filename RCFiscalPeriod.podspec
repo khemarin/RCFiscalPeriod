@@ -9,24 +9,26 @@
 Pod::Spec.new do |s|
   s.name             = 'RCFiscalPeriod'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RCFiscalPeriod.'
+  s.summary          = 'NSDate category to calculate fiscal year'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+Fiscall year is created to calculate the fiscal period of a specific date with following rule:
+Starting day of the year is the first Saturday of the year
+One period is equal to four weeks (following first saturday of the year)
+One quarter is equal to three period
+
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Fiscall year is created to calculate the fiscal period of a specific date with following rule:
+- Starting day of the year is the first Saturday of the year
+- One `period` is equal to four weeks (following first saturday of the year)
+- One `quarter` is equal to three `period`
+
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RCFiscalPeriod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/khemarin/RCFiscalPeriod'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Khemarin' => 'loch_khemarin@yahoo.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RCFiscalPeriod.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/khemarin/RCFiscalPeriod.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
