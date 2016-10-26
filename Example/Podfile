@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RCFiscalPeriod_Tests' do
+  pod 'RCFiscalPeriod', :path => '../'
+  
+  
+end
