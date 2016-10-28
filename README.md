@@ -1,9 +1,5 @@
 # RCFiscalPeriod
-
-[![CI Status](http://img.shields.io/travis/Khemarin/RCFiscalPeriod.svg?style=flat)](https://travis-ci.org/Khemarin/RCFiscalPeriod)
-[![Version](https://img.shields.io/cocoapods/v/RCFiscalPeriod.svg?style=flat)](http://cocoapods.org/pods/RCFiscalPeriod)
-[![License](https://img.shields.io/cocoapods/l/RCFiscalPeriod.svg?style=flat)](http://cocoapods.org/pods/RCFiscalPeriod)
-[![Platform](https://img.shields.io/cocoapods/p/RCFiscalPeriod.svg?style=flat)](http://cocoapods.org/pods/RCFiscalPeriod)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Features
 Fiscall year is created to calculate the fiscal period of a specific date with following rule:
