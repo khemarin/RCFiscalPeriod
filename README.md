@@ -1,5 +1,5 @@
 # RCFiscalPeriod
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/khemarin/RCFiscalPeriod)
 
 ## Features
 Fiscall year is created to calculate the fiscal period of a specific date with following rule:
